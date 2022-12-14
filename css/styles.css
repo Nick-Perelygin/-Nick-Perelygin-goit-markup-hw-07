@@ -360,14 +360,17 @@ h2{
 .section-portfolio__filter li:not(:last-child) {
     margin-right: 8px;
 }
-.filter{ padding: 20px 24px;
+.portfolio-card__describe{ padding: 20px 24px;
 border-bottom: 1px solid #EEEEEE;
 border-right: 1px solid #EEEEEE;
 border-left: 1px solid #EEEEEE;
-cursor: pointer;}
+cursor: pointer;
+text-decoration: none
+
+}
 
 
-.portfolio-title {
+.portfolio-card__title {
     color: var(--primery-text-color);
     font-size: 18px;
     line-height: 2;
@@ -376,45 +379,49 @@ cursor: pointer;}
     
 }
 
-.portfolio-text {
+.portfolio-card__paragraph{
     font-size: 16px;
     line-height: 1.88;
     font-weight: 400;
    
 }
 
-.portfolio {
+.portfolio-card {
     display: flex;
     flex-wrap: wrap;
     
     
 }
 
-.portfolio li {
+.portfolio-card li {
     margin-bottom: 30px;
     margin-right: 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio li:nth-child(3n) {
+.portfolio-card li:nth-child(3n) {
     margin-right: 0px;
 }
 
-.portfolio li:nth-last-child(-n + 3) {
+.portfolio-card li:nth-last-child(-n + 3) {
     margin-bottom: 0px;
 }
 
-.portfolio li:hover,
-.portfolio li:focus {
+.portfolio-card li:hover,
+.portfolio-card li:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio .header-contact__link {
+.portfolio-card .header-contact__link {
     
     color: var(--secondary-text-color);
 }
-
+a{text-decoration: none;}
 .current {
     text-decoration: none;
+}
+.portfolio-card__color{
+    color: var(--primery-text-color);
 }
 
 .section-team__people{
@@ -617,10 +624,10 @@ align-items: center;}
     background-color: rgba(47, 48, 58, 0.8); ;
 }
 
-    .seven{position: relative;
+    .portfolio-card__info{position: relative;
     overflow-y: hidden;
     }
-    .text{position: absolute;
+    .portfolio-card__text{position: absolute;
         display: block;
         content: "";
         top: 100%;
@@ -644,7 +651,7 @@ align-items: center;}
         opacity: 0;
         cursor: pointer;
     }
-    .seven:hover .text{
+    .portfolio-card__info:hover .portfolio-card__text{
        
         transform: translateY(-100%);
         opacity: 1;
@@ -658,13 +665,10 @@ align-items: center;}
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    ul .portfolio{
+    ul .portfolio-card{
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .second-card{
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
-    }
+    
            
    .footer-subscribe{
    
@@ -771,7 +775,7 @@ align-items: center;}
                     margin-bottom: 4px;
                 }
         
-                .comment {
+                .backdrop-inputs__comment {
                     height: 120px;
                     padding-top: 12px;
                     padding-bottom: 12px;

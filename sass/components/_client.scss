@@ -1,0 +1,27 @@
+.section-client__icon:last-child {
+    margin-right: 0px;
+}
+
+.section-client__icon:hover,
+.section-client__icon:focus {
+    cursor: pointer;
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+
+
+}
+
+.section-client__box:hover,
+.section-client__box:focus {
+    color: var(--accent-color);
+}
+.section-client__icon {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #AFB1B8;
+    margin-right: 30px;
+    border-radius: 4px;
+}

@@ -1,0 +1,26 @@
+ /* Лого */
+
+ .header-nav__studio {
+     color: #000000;
+     font-family: raleway, sans-serif;
+     font-size: 26px;
+     line-height: 1.17;
+     text-decoration: none;
+     display: inline-block;
+     margin-right: 93px;
+ }
+
+ .footer__studio {
+     color: var(--primery-color);
+     font-family: raleway, sans-serif;
+     font-size: 26px;
+     line-height: 1.17;
+     text-decoration: none;
+     display: inline-block;
+     margin-bottom: 20px;
+ }
+
+ .header-nav__logo {
+    color: var(--accent-color);
+}
+ 
